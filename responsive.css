@@ -1,6 +1,14 @@
 /* For screens smaller than 600px (e.g., smartphones) */
 @media screen and (max-width: 600px) {
     /* Write your responsive CSS rules here */
+    #page > video {
+        width: 100%; /* Adjust width to fill the entire screen width */
+        height: auto; /* Maintain aspect ratio */
+        top: 0; /* Align to the top of the #page div */
+        left: 0; /* Align to the left of the #page div */
+        transform: none; /* Remove horizontal centering */
+      }
+
     #page>nav>button{
     padding: 5px 20px;
     border-radius: 50px;
@@ -35,7 +43,6 @@
     #page-3-upper>img{
         width: 95%;
         height: 17%;
-        border: 2px solid pink;
     }
 
     #page-3-upper-inner{
